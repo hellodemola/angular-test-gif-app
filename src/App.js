@@ -22,7 +22,7 @@ async function HandleSubmit (e) {
   setIsLoading(true)
   setGiphy(false)
   try{  
-  const response = await Axios.get(`http://api.giphy.com/v1/gifs/search?q=${searchItem}&api_key=7SVgiay9MnyNJn3NIBjlaUfa12WW4iHr&limit=24`)
+  const response = await Axios.get(`https://api.giphy.com/v1/gifs/search?q=${searchItem}&api_key=7SVgiay9MnyNJn3NIBjlaUfa12WW4iHr&limit=24`)
 
   if(response.data){ 
    let responseData = JSON.stringify(response.data.data)
